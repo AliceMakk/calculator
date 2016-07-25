@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+
+    <link href="css/calculator.css" rel="stylesheet">
+
+    <link href="bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.4.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header clearfix">
+        <h3 class="text-muted">Just Calculate</h3>
+    </div>
+
+    <div class="jumbotron">
+
+        <div class="row">
+            <div id="calculator_block" class="col-sm-4 col-sm-offset-4">
+
+                <div class="alert alert-danger" role="alert" id="error_box"></div>
+
+                <form action="Controller/Reciever.php" method="post">
+
+                    <input type="text" value="" id="result">
+
+                    <div class="btn_group_calculator">
+                        <input type="button" value="1" class="figure"><input type="button" value="2"
+                                                                             class="figure"><input
+                            type="button" value="3" class="figure"><input
+                            type="button" value="&times;" class="arithmetic">
+                    </div>
+
+                    <div class="btn_group_calculator">
+                        <input type="button" value="4" class="figure"><input type="button" value="5"
+                                                                             class="figure"><input
+                            type="button" value="6" class="figure"><input
+                            type="button" value="&minus;" class="arithmetic">
+                    </div>
+
+                    <div class="btn_group_calculator">
+                        <input type="button" value="7" class="figure"><input type="button" value="8"
+                                                                             class="figure"><input
+                            type="button" value="9" class="figure"><input
+                            type="button" value="&divide;" class="arithmetic">
+                    </div>
+
+                    <div class="btn_group_calculator">
+                        <input type="button" value="DEL" id="del_figure"><input type="button" value="0"
+                                                                                class="figure"><input
+                            type="button" value="=" id="get_result"><input
+                            type="button" value="+" class="arithmetic">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/calculator.js" type="text/javascript"></script>
+
+</body>
+
+</html>
